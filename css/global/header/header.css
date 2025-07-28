@@ -1,0 +1,189 @@
+.mobile-nav__btn {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.mobile-nav__btn {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.mobile-nav__btn.open {
+  display: flex;
+}
+
+.mobile-nav__btn .mobile-nav__btn-icon {
+  display: flex;
+  position: relative;
+}
+
+.mobile-nav__btn .mobile-nav__btn-icon,
+.mobile-nav__btn .mobile-nav__btn-icon::before,
+.mobile-nav__btn .mobile-nav__btn-icon::after {
+  width: 16px;
+  height: 2px;
+  background: var(--secondary-btn-color);
+  border: 2px;
+}
+
+.mobile-nav__btn .mobile-nav__btn-icon::before,
+.mobile-nav__btn .mobile-nav__btn-icon::after {
+  position: absolute;
+    height: 2px;
+  content: "";
+}
+
+.mobile-nav__btn .mobile-nav__btn-icon::before {
+  top: 5px;
+}
+
+.mobile-nav__btn .mobile-nav__btn-icon::after {
+  bottom: 5px;
+}
+
+/* =================================== */
+/* Кнопка — пусть у тебя уже есть */
+.mobile-nav__btn.open {
+  z-index: 9999;
+}
+
+.body.open {
+  overflow-y: hidden !important;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* background: var(--card-bg); */
+  background: transparent;
+  height: 100vh;
+  transform: translateY(-100%);
+  transition: all 0.3s ease;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+}
+
+.mobile-nav.open {
+  background: var(--accent-bg);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav.open {
+  transform: translateY(0);
+}
+
+.mobile-nav__menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.mobile-nav__menu li {
+  margin: 16px 0;
+}
+
+.mobile-nav__menu a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.body.open .mobile-nav__btn .mobile-nav__btn-icon::before,
+.body.open .mobile-nav__btn .mobile-nav__btn-icon::after,
+.body.open .mobile-nav__btn .mobile-nav__btn-icon {
+  background: var(--accent-section-text);
+  transition: all 0.3 ease;
+}
+
+
+.mobile-language-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+}
+
+.mobile-language-btn svg path {
+  fill: #fff;
+}
+
+.mobile-language-btn:hover {}
+
+.mobile-language-btn svg:last-child {
+  transition: all 0.3s;
+}
+
+.mobile-language-btn:hover svg:last-child {
+  transform: rotate(180deg);
+  transition: all 0.3s;
+}
+
+.body.open .header__logo-wrapper img:last-child {
+  display: flex;
+  opacity: 1;
+  transition: all .3s ease;
+  visibility: visible;
+  z-index: 99999;
+}
+
+.body.open .header__logo-wrapper img:first-child {
+  display: none;
+  opacity: 0;
+  transition: all .3s ease;
+  visibility: hidden;
+}
+
+@media (max-width: 920px) {
+
+  .header__logo-wrapper,
+  .header__logo-wrapper img {
+    max-width: 120px;
+  }
+
+  .header__nav-list,
+  .language-btn {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease;
+  }
+
+  .mobile-nav__btn {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transition: all .3s ease;
+  }
+
+  .mobile-nav__btn {
+    gap: 12px;
+  }
+
+  .body.open .mobile-language-btn {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transition: all .3s ease;
+  }
+
+  .header__inner {
+    padding: 16px 0;
+  }
+}
+

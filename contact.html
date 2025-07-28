@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>KITAEV</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="body">
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo-wrapper">
+            <img src="./media/header/logo.svg" alt="site-logo" />
+            <img src="./media/header/whiteLogo.svg" alt="site-logo" />
+          </div>
+          <div class="header__nav-wrapper">
+            <nav class="header_nav nav">
+              <ul class="header__nav-list nav-list">
+                <li class="header__nav-item nav-item">
+                  <a href="./">Home</a>
+                </li>
+                <li class="header__nav-item nav-item">
+                  <a href="./about.html">About us</a>
+                </li>
+                <li class="header__nav-item nav-item">
+                  <a href="./services.html">Product</a>
+                </li>
+                <li class="header__nav-item nav-item">
+                  <a href="./contact.html">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="mobile-nav">
+              <ul class="mobile-nav__menu">
+                <li><a href="./">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Product</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li> <a href="#" class="mobile-language-btn">
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 21a8.724 8.724 0 01-3.5-.71 9.123 9.123 0 01-2.86-1.93 9.162 9.162 0 01-1.93-2.86A8.674 8.674 0 013 12c0-1.243.237-2.41.71-3.503A9.118 9.118 0 015.64 5.64 9.184 9.184 0 018.5 3.71 8.723 8.723 0 0112 3c1.243 0 2.41.237 3.503.71a9.13 9.13 0 012.858 1.93 9.157 9.157 0 011.929 2.857A8.722 8.722 0 0121 12a8.724 8.724 0 01-.71 3.5 9.123 9.123 0 01-1.93 2.86 9.172 9.172 0 01-2.857 1.93A8.668 8.668 0 0112 21zm0-.992a14.959 14.959 0 001.452-2.221c.38-.727.69-1.54.929-2.44H9.619c.265.95.58 1.79.948 2.516.368.727.846 1.442 1.433 2.145zm-1.273-.15c-.467-.55-.893-1.23-1.278-2.04a11.683 11.683 0 01-.86-2.472H4.754a7.943 7.943 0 002.437 3.06 7.358 7.358 0 003.536 1.452zm2.546 0a7.359 7.359 0 003.536-1.452 7.943 7.943 0 002.437-3.06h-3.834a17.26 17.26 0 01-.957 2.491c-.385.81-.78 1.484-1.182 2.021zm-8.927-5.511h4.035c-.076-.41-.13-.81-.16-1.2a13.977 13.977 0 01-.001-2.294c.031-.389.085-.789.16-1.2H4.347a8.156 8.156 0 00-.256 3.562c.06.409.146.786.255 1.131m5.035 0h5.238c.076-.41.13-.803.16-1.18a14.059 14.059 0 00.001-2.332c-.031-.376-.085-.77-.16-1.18H9.38c-.075.41-.129.803-.16 1.18-.031.376-.047.765-.047 1.166a12.148 12.148 0 00.208 2.346zm6.239 0h4.034c.109-.346.194-.723.255-1.131a8.261 8.261 0 000-2.43 7.307 7.307 0 00-.255-1.131h-4.035c.076.41.13.81.16 1.199a14.001 14.001 0 01.001 2.294c-.031.39-.085.79-.16 1.2m-.208-5.693h3.834c-.586-1.27-1.389-2.29-2.408-3.06-1.02-.77-2.208-1.261-3.565-1.471.467.614.886 1.316 1.259 2.107.373.79.666 1.598.88 2.424zm-5.793 0h4.762a13.82 13.82 0 00-.977-2.546A11.147 11.147 0 0012 3.992a11.105 11.105 0 00-1.404 2.116c-.387.76-.714 1.608-.977 2.546zm-4.864 0h3.834a13.8 13.8 0 01.88-2.424 11.74 11.74 0 011.259-2.107c-1.37.21-2.56.704-3.574 1.48-1.013.777-1.813 1.794-2.4 3.05"
+                        fill="#2A2B6D" />
+                    </svg>
+                    <span>EN</span>
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 10l-4 4-4-4" stroke="#2A2B6D" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__btn-wrapper btn-wrapper">
+            <a href="#" class="language-btn">
+              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 21a8.724 8.724 0 01-3.5-.71 9.123 9.123 0 01-2.86-1.93 9.162 9.162 0 01-1.93-2.86A8.674 8.674 0 013 12c0-1.243.237-2.41.71-3.503A9.118 9.118 0 015.64 5.64 9.184 9.184 0 018.5 3.71 8.723 8.723 0 0112 3c1.243 0 2.41.237 3.503.71a9.13 9.13 0 012.858 1.93 9.157 9.157 0 011.929 2.857A8.722 8.722 0 0121 12a8.724 8.724 0 01-.71 3.5 9.123 9.123 0 01-1.93 2.86 9.172 9.172 0 01-2.857 1.93A8.668 8.668 0 0112 21zm0-.992a14.959 14.959 0 001.452-2.221c.38-.727.69-1.54.929-2.44H9.619c.265.95.58 1.79.948 2.516.368.727.846 1.442 1.433 2.145zm-1.273-.15c-.467-.55-.893-1.23-1.278-2.04a11.683 11.683 0 01-.86-2.472H4.754a7.943 7.943 0 002.437 3.06 7.358 7.358 0 003.536 1.452zm2.546 0a7.359 7.359 0 003.536-1.452 7.943 7.943 0 002.437-3.06h-3.834a17.26 17.26 0 01-.957 2.491c-.385.81-.78 1.484-1.182 2.021zm-8.927-5.511h4.035c-.076-.41-.13-.81-.16-1.2a13.977 13.977 0 01-.001-2.294c.031-.389.085-.789.16-1.2H4.347a8.156 8.156 0 00-.256 3.562c.06.409.146.786.255 1.131m5.035 0h5.238c.076-.41.13-.803.16-1.18a14.059 14.059 0 00.001-2.332c-.031-.376-.085-.77-.16-1.18H9.38c-.075.41-.129.803-.16 1.18-.031.376-.047.765-.047 1.166a12.148 12.148 0 00.208 2.346zm6.239 0h4.034c.109-.346.194-.723.255-1.131a8.261 8.261 0 000-2.43 7.307 7.307 0 00-.255-1.131h-4.035c.076.41.13.81.16 1.199a14.001 14.001 0 01.001 2.294c-.031.39-.085.79-.16 1.2m-.208-5.693h3.834c-.586-1.27-1.389-2.29-2.408-3.06-1.02-.77-2.208-1.261-3.565-1.471.467.614.886 1.316 1.259 2.107.373.79.666 1.598.88 2.424zm-5.793 0h4.762a13.82 13.82 0 00-.977-2.546A11.147 11.147 0 0012 3.992a11.105 11.105 0 00-1.404 2.116c-.387.76-.714 1.608-.977 2.546zm-4.864 0h3.834a13.8 13.8 0 01.88-2.424 11.74 11.74 0 011.259-2.107c-1.37.21-2.56.704-3.574 1.48-1.013.777-1.813 1.794-2.4 3.05"
+                  fill="#2A2B6D" />
+              </svg>
+              <span>EN</span>
+              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 10l-4 4-4-4" stroke="#2A2B6D" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="#" class="get-started-btn button">Get Started</a>
+            <a href="#" class="mobile-nav__btn">
+              <span class="mobile-nav__btn-icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="contact">
+        <div class="container">
+          <div class="contact__inner">
+            <div class="benefits__info-wrapper info-wrapper ">
+              <div class="benefits__title-wrapper  title-wrapper">
+                <h2 class="benefits__title title">
+                  Contact Us
+                </h2>
+              </div>
+              <div class="benefits__subtitle-wrapper subtitle-wrapper">
+                <p class="benefits__subtitle text">
+                  Any question or remarks? Just write us a message!
+                </p>
+              </div>
+            </div>
+            <div class="contact__content">
+
+              <!-- Левая колонка -->
+              <div class="contact__info contact__content-col">
+                <div class="contact__info-inner">
+                  <h3 class="contact__info-title">Get in Touch</h3>
+                  <p class="contact__info-text">
+                    Have questions about our solutions or want to discuss a custom AI project? Contact our team today.
+                  </p>
+
+                  <ul class="contact__info-list">
+                    <li class="contact__info-item">
+                      <img src="./media/contact/bxs_phone-call.svg" alt="phone icon">
+                      <div class="info-item__inner">
+                        <span class="contact__info-label">Call Us</span>
+                        <a href="tel:+971505555555" class="contact__info-value">+971 50 555 5555</a>
+                      </div>
+
+                    </li>
+                    <li class="contact__info-item">
+                      <img src="./media/contact/ic_sharp-email.svg" alt="email icon">
+                      <div class="info-item__inner">
+                        <span class="contact__info-label">Email Us</span>
+                        <a href="mailto:contact@kitaev.ai" class="contact__info-value">contact@kitaev.ai</a>
+                      </div>
+
+                    </li>
+                    <li class="contact__info-item">
+                      <img src="./media/contact/carbon_location-filled.svg" alt="point icon">
+                      <div class="info-item__inner">
+                        <span class="contact__info-label">Global Headquarters</span>
+                        <span class="contact__info-value">123 Business District, Moscow, Russia</span>
+                      </div>
+
+                    </li>
+                  </ul>
+                </div>
+                <div class="contact__socials">
+                  <a href="#" class="contact__social contact__social--x" aria-label="X"><img
+                      src="./media/socials/x-icon.svg" alt="x-icon"></a>
+                  <a href="#" class="contact__social contact__social--linkedin" aria-label="LinkedIn"><img
+                      src="./media/socials/li-icon.svg" alt="li-icon"></a>
+                  <a href="#" class="contact__social contact__social--facebook" aria-label="Facebook"><img
+                      src="./media/socials/fb-icon.svg" alt="fb-icon"></a>
+                  <a href="#" class="contact__social contact__social--custom" aria-label="Custom"><img
+                      src="./media/socials/peace-icon.svg" alt="peace-icon"></a>
+                </div>
+                <svg width="100%" height="100%" viewBox="0 0 100% 100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_292_3913)">
+                    <g filter="url(#filter0_f_292_3913)">
+                      <ellipse cx="312.635" cy="96" rx="312.635" ry="96"
+                        transform="matrix(0.546129 0.837701 0.837701 -0.546129 50.1274 345.172)"
+                        fill="url(#paint0_linear_292_3913)" />
+                    </g>
+                  </g>
+                  <defs>
+                    <filter id="filter0_f_292_3913" x="-387.489" y="-212.505" width="1377.55" height="1534.28"
+                      filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                      <feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_292_3913" />
+                    </filter>
+                    <linearGradient id="paint0_linear_292_3913" x1="625.269" y1="96" x2="34.5966" y2="96"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#06ACFF" />
+                      <stop offset="1" stop-color="#06ACFF" />
+                    </linearGradient>
+                    <clipPath id="clip0_292_3913">
+                      <rect width="100%" height="100%" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+
+              <!-- Правая колонка -->
+              <div class="contact__form-block contact__content-col">
+                <h3 class="contact__form-title">Text us a message</h3>
+                <form class="contact__form" action="#" method="post">
+                  <div class="contact__form-row">
+                    <div class="contact__form-item">
+                      <label class="contact__label">Full Name</label>
+                      <input type="text" name="full_name" class="contact__input" required>
+
+                    </div>
+                    <div class="contact__form-item">
+
+                      <label class="contact__label">Business Email</label>
+                      <input type="email" name="email" class="contact__input" required>
+
+                    </div>
+                  </div>
+                  <div class="contact__form-row">
+                    <div class="contact__form-item">
+                      <label class="contact__label">Company Name</label>
+                      <input type="text" name="company" class="contact__input">
+                    </div>
+                    <div class="contact__form-item">
+                      <label class="contact__label">Phone Number</label>
+                      <input type="tel" name="phone" class="contact__input">
+                    </div>
+                  </div>
+                  <div class="contact__form-row">
+                    <div class="contact__form-item">
+                      <label class="contact__label">Message</label>
+                      <textarea name="message" class="contact__textarea" rows="5" required></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="contact__submit">Send Message</button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__contact-form">
+        <div class="container">
+          <div class="contact-form_inner">
+            <div class="contact-form__content">
+              <div class="contact-form__text text">
+                <h3 class="contact-form__title title">
+                  Get notified when we launch
+                </h3>
+                <p class="contact-form__description">
+                  Stay up to date with the latest news, announcements, and articles.
+                </p>
+              </div>
+              <form class="newsletter__form">
+                <input type="email" class="contact-form__input" placeholder="Enter your email" required>
+                <button type="submit" class="contact-form__button button">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__inner">
+        <div class="footer__container container">
+          <div class="footer__logo-wrapper">
+            <div class="footer__logo">
+              <img src="media/footer/FooterLogo.svg" alt="logo">
+            </div>
+            <p class="footer__description-text text">
+              AI-powered solutions for enterprise optimization and competitive advantage.
+            </p>
+          </div>
+          <div class="footer__nav-wrapper">
+            <nav class="footer__nav">
+              <div class="footer__nav-col">
+                <h4>Product</h4>
+                <ul>
+                  <li><a href="#">Overview</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Solutions <span class="tag-new">New</span></a></li>
+                  <li><a href="#">Tutorials</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Releases</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-col">
+                <h4>Company</h4>
+                <ul>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Media kit</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-col">
+                <h4>Resources</h4>
+                <ul>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Newsletter</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Help centre</a></li>
+                  <li><a href="#">Tutorials</a></li>
+                  <li><a href="#">Support</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-col">
+                <h4>Social</h4>
+                <ul>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">LinkedIn</a></li>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">GitHub</a></li>
+                  <li><a href="#">AngelList</a></li>
+                  <li><a href="#">Dribbble</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-col">
+                <h4>Legal</h4>
+                <ul>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Cookies</a></li>
+                  <li><a href="#">Licenses</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner">
+            <p>© 2023 KITAEV Technologies. All rights reserved.</p>
+            <div class="footer__icons">
+              <!-- сюда можно вставить SVG или иконки из Font Awesome -->
+              <a href="#"><img src="media/socials/x-icon.svg" alt="X"></a>
+              <a href="#"><img src="media/socials/li-icon.svg" alt="LinkedIn"></a>
+              <a href="#"><img src="media/socials/fb-icon.svg" alt="Facebook"></a>
+              <a href="#"><img src="media/socials/gh-icon.svg" alt="GitHub"></a>
+              <a href="#"><img src="media/socials/peace-icon.svg" alt="AngelList"></a>
+              <a href="#"><img src="media/socials/dribbbleicon.svg" alt="Dribbble"></a>
+              <a href="#"><img src="media/socials/cube-icon.svg" alt="Cube"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+<!-- <script type="module" src="./js/swiper-bundle.min.js"></script> -->
+
+</html>

@@ -1,0 +1,12 @@
+@import url("./global/reset.css");
+@import url("./global/fonts.css");
+@import url("./global/general.css");
+@import url("./global/header/header.css");
+@import url("./home/home.css");
+@import url("./about/about.css");
+@import url("./contact/contact.css");
+@import url("./services/services.css");
+@import url("./configurator/configurator.css");
+@import url("./../node_modules/swiper/swiper-bundle.min.css");
+@import url("./global/swiper-bundle.min.css");
+/* @import url("./"); */

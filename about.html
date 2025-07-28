@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>KITAEV</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="body">
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo-wrapper">
+            <img src="./media/header/logo.svg" alt="site-logo" />
+            <img src="./media/header/whiteLogo.svg" alt="site-logo" />
+          </div>
+          <div class="header__nav-wrapper">
+            <nav class="header_nav nav">
+              <ul class="header__nav-list nav-list">
+                <li class="header__nav-item nav-item">
+                  <a href="./">Home</a>
+                </li>
+                <li class="header__nav-item nav-item">
+                  <a href="./about.html">About us</a>
+                </li>
+                <li class="header__nav-item nav-item">
+                  <a href="./services.html">Product</a>
+                </li>
+                <li class="header__nav-item nav-item">
+                  <a href="./contact.html">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="mobile-nav">
+              <ul class="mobile-nav__menu">
+                <li><a href="./">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Product</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li> <a href="#" class="mobile-language-btn">
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 21a8.724 8.724 0 01-3.5-.71 9.123 9.123 0 01-2.86-1.93 9.162 9.162 0 01-1.93-2.86A8.674 8.674 0 013 12c0-1.243.237-2.41.71-3.503A9.118 9.118 0 015.64 5.64 9.184 9.184 0 018.5 3.71 8.723 8.723 0 0112 3c1.243 0 2.41.237 3.503.71a9.13 9.13 0 012.858 1.93 9.157 9.157 0 011.929 2.857A8.722 8.722 0 0121 12a8.724 8.724 0 01-.71 3.5 9.123 9.123 0 01-1.93 2.86 9.172 9.172 0 01-2.857 1.93A8.668 8.668 0 0112 21zm0-.992a14.959 14.959 0 001.452-2.221c.38-.727.69-1.54.929-2.44H9.619c.265.95.58 1.79.948 2.516.368.727.846 1.442 1.433 2.145zm-1.273-.15c-.467-.55-.893-1.23-1.278-2.04a11.683 11.683 0 01-.86-2.472H4.754a7.943 7.943 0 002.437 3.06 7.358 7.358 0 003.536 1.452zm2.546 0a7.359 7.359 0 003.536-1.452 7.943 7.943 0 002.437-3.06h-3.834a17.26 17.26 0 01-.957 2.491c-.385.81-.78 1.484-1.182 2.021zm-8.927-5.511h4.035c-.076-.41-.13-.81-.16-1.2a13.977 13.977 0 01-.001-2.294c.031-.389.085-.789.16-1.2H4.347a8.156 8.156 0 00-.256 3.562c.06.409.146.786.255 1.131m5.035 0h5.238c.076-.41.13-.803.16-1.18a14.059 14.059 0 00.001-2.332c-.031-.376-.085-.77-.16-1.18H9.38c-.075.41-.129.803-.16 1.18-.031.376-.047.765-.047 1.166a12.148 12.148 0 00.208 2.346zm6.239 0h4.034c.109-.346.194-.723.255-1.131a8.261 8.261 0 000-2.43 7.307 7.307 0 00-.255-1.131h-4.035c.076.41.13.81.16 1.199a14.001 14.001 0 01.001 2.294c-.031.39-.085.79-.16 1.2m-.208-5.693h3.834c-.586-1.27-1.389-2.29-2.408-3.06-1.02-.77-2.208-1.261-3.565-1.471.467.614.886 1.316 1.259 2.107.373.79.666 1.598.88 2.424zm-5.793 0h4.762a13.82 13.82 0 00-.977-2.546A11.147 11.147 0 0012 3.992a11.105 11.105 0 00-1.404 2.116c-.387.76-.714 1.608-.977 2.546zm-4.864 0h3.834a13.8 13.8 0 01.88-2.424 11.74 11.74 0 011.259-2.107c-1.37.21-2.56.704-3.574 1.48-1.013.777-1.813 1.794-2.4 3.05"
+                        fill="#2A2B6D" />
+                    </svg>
+                    <span>EN</span>
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 10l-4 4-4-4" stroke="#2A2B6D" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__btn-wrapper btn-wrapper">
+            <a href="#" class="language-btn">
+              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 21a8.724 8.724 0 01-3.5-.71 9.123 9.123 0 01-2.86-1.93 9.162 9.162 0 01-1.93-2.86A8.674 8.674 0 013 12c0-1.243.237-2.41.71-3.503A9.118 9.118 0 015.64 5.64 9.184 9.184 0 018.5 3.71 8.723 8.723 0 0112 3c1.243 0 2.41.237 3.503.71a9.13 9.13 0 012.858 1.93 9.157 9.157 0 011.929 2.857A8.722 8.722 0 0121 12a8.724 8.724 0 01-.71 3.5 9.123 9.123 0 01-1.93 2.86 9.172 9.172 0 01-2.857 1.93A8.668 8.668 0 0112 21zm0-.992a14.959 14.959 0 001.452-2.221c.38-.727.69-1.54.929-2.44H9.619c.265.95.58 1.79.948 2.516.368.727.846 1.442 1.433 2.145zm-1.273-.15c-.467-.55-.893-1.23-1.278-2.04a11.683 11.683 0 01-.86-2.472H4.754a7.943 7.943 0 002.437 3.06 7.358 7.358 0 003.536 1.452zm2.546 0a7.359 7.359 0 003.536-1.452 7.943 7.943 0 002.437-3.06h-3.834a17.26 17.26 0 01-.957 2.491c-.385.81-.78 1.484-1.182 2.021zm-8.927-5.511h4.035c-.076-.41-.13-.81-.16-1.2a13.977 13.977 0 01-.001-2.294c.031-.389.085-.789.16-1.2H4.347a8.156 8.156 0 00-.256 3.562c.06.409.146.786.255 1.131m5.035 0h5.238c.076-.41.13-.803.16-1.18a14.059 14.059 0 00.001-2.332c-.031-.376-.085-.77-.16-1.18H9.38c-.075.41-.129.803-.16 1.18-.031.376-.047.765-.047 1.166a12.148 12.148 0 00.208 2.346zm6.239 0h4.034c.109-.346.194-.723.255-1.131a8.261 8.261 0 000-2.43 7.307 7.307 0 00-.255-1.131h-4.035c.076.41.13.81.16 1.199a14.001 14.001 0 01.001 2.294c-.031.39-.085.79-.16 1.2m-.208-5.693h3.834c-.586-1.27-1.389-2.29-2.408-3.06-1.02-.77-2.208-1.261-3.565-1.471.467.614.886 1.316 1.259 2.107.373.79.666 1.598.88 2.424zm-5.793 0h4.762a13.82 13.82 0 00-.977-2.546A11.147 11.147 0 0012 3.992a11.105 11.105 0 00-1.404 2.116c-.387.76-.714 1.608-.977 2.546zm-4.864 0h3.834a13.8 13.8 0 01.88-2.424 11.74 11.74 0 011.259-2.107c-1.37.21-2.56.704-3.574 1.48-1.013.777-1.813 1.794-2.4 3.05"
+                  fill="#2A2B6D" />
+              </svg>
+              <span>EN</span>
+              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 10l-4 4-4-4" stroke="#2A2B6D" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="#" class="get-started-btn button">Get Started</a>
+            <a href="#" class="mobile-nav__btn">
+              <span class="mobile-nav__btn-icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero about__hero">
+        <div class="container">
+          <div class="hero__inner about__hero-inner">
+            <div class="hero__text-wrapper about__hero-text-wrapper">
+              <div class="hero__text-inner">
+                <div class="hero__text-container about__text-container">
+                  <div class="hero__title-wrapper">
+                    <h1 class="hero__title title">
+                      <span class="hero__accent-text">Global IT solutions</span>
+                      for ambitious businesses
+                    </h1>
+                  </div>
+                  <div class="hero__text-inner">
+                    <p class="hero__text text">
+                      Creating products that work for you 24/7
+                    </p>
+                  </div>
+                  <div class="hero__button-wrapper">
+                    <a href="#" class="hero__button button">Start Now
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 12H17M17 12L13 8M17 12L13 16" stroke="#2A2B6D" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="hero__img-container about__img-container">
+                  <img src="./media/about/Isolation Mode.svg" alt="hero Background">
+                  <img id="hero__animated-gloss" src="./media/about/animated-gloss-filled-only.svg" alt="AIC">
+                  <img src="./media/about/AIC.svg" alt="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="benefits">
+        <div class="benefits__container">
+          <div class="benefits__info-wrapper info-wrapper">
+            <div class="benefits__title-wrapper  title-wrapper">
+              <h2 class="benefits__title title">
+                Why KITAEV is the premium business choice?
+              </h2>
+            </div>
+            <div class="benefits__subtitle-wrapper subtitle-wrapper">
+              <p class="benefits__subtitle text">
+                Our approach to developing IT solutions is based on three key principles:
+              </p>
+            </div>
+          </div>
+          <div class="benefits__list">
+            <div class="benefits__item">
+              <div class="benefits__icon">
+                <img src="./media/about/customization.svg" alt="Customization icon" />
+              </div>
+              <h3 class="benefits__item-title">Full customization</h3>
+              <p class="benefits__item-text">
+                No templates – only personalized scenarios that take into account the specifics of your business. We
+                develop turnkey solutions.
+              </p>
+            </div>
+
+            <div class="benefits__item">
+              <div class="benefits__icon">
+                <img src="./media/about/confidentiality.svg" alt="Confidentiality icon" />
+              </div>
+              <h3 class="benefits__item-title">Maximum confidentiality</h3>
+              <p class="benefits__item-text">
+                NDA by default + dedicated servers in your region. We guarantee data protection at the level of
+                banking
+                standards.
+              </p>
+            </div>
+
+            <div class="benefits__item">
+              <div class="benefits__icon">
+                <img src="./media/about/support.svg" alt="Support icon" />
+              </div>
+              <h3 class="benefits__item-title">Premium support</h3>
+              <p class="benefits__item-text">
+                Your personalized AI-engineer is on call 24/7. We support every product throughout life cycle.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our-experts">
+        <div class="container">
+          <div class="our-experts__wrapper">
+            <div class="our-experts__info-wrapper info-wrapper">
+              <div class="our-experts__title-wrapper  title-wrapper">
+                <h2 class="our-experts__title title">
+                  Why KITAEV is the premium business choice?
+                </h2>
+              </div>
+              <div class="our-experts__subtitle-wrapper subtitle-wrapper">
+                <p class="our-experts__subtitle text">
+                  Our approach to developing IT solutions is based on three key principles:
+                </p>
+              </div>
+            </div>
+            <div class="our-experts__inner">
+              <div class="our-experts__swiper swiper">
+                <div class="our-experts__swiper-wrapper swiper-wrapper">
+                  <div class="our-experts__swiper-slide swiper-slide">
+                    <div class="our-experts__slide-inner">
+                      <img src="./media/about/avatar1.jpg" alt="our-experts__card-bg">
+                      <div class="our-experts__info">
+                        <h5 class="our-experts__name">Annette Black</h5>
+                        <p class="our-experts__position">Founder</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="our-experts__swiper-slide swiper-slide">
+                    <div class="our-experts__slide-inner">
+                      <img src="./media/about/avatar2.jpg" alt="our-experts__card-bg">
+                      <div class="our-experts__info">
+                        <h5 class="our-experts__name">Annette Black</h5>
+                        <p class="our-experts__position">Founder</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="our-experts__swiper-slide swiper-slide">
+                    <div class="our-experts__slide-inner">
+                      <img src="./media/about/avatar3.jpg" alt="our-experts__card-bg">
+                      <div class="our-experts__info">
+                        <h5 class="our-experts__name">Annette Black</h5>
+                        <p class="our-experts__position">Founder</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="our-experts__swiper-slide swiper-slide">
+                    <div class="our-experts__slide-inner">
+                      <img src="./media/about/avatar1.jpg" alt="our-experts__card-bg">
+                      <div class="our-experts__info">
+                        <h5 class="our-experts__name">Annette Black</h5>
+                        <p class="our-experts__position">Founder</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="our-experts__pagination-wrapper">
+              <div class="our-experts__swiper-pagination swiper-pagination"></div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+      <section class="our-story">
+        <div class="container">
+          <div class="our-story__inner">
+            <div class="our-story__timeline">
+              <!-- <h2 class="timeline__title">Our Story</h2> -->
+              <div class="our-story__info-wrapper info-wrapper">
+                <div class="our-story__title-wrapper  title-wrapper">
+                  <h2 class="our-story__title title">
+                    Our Story
+                  </h2>
+                </div>
+              </div>
+              <div class="timeline__wrapper">
+                <div class="timeline__item">
+
+                  <div class="timeline__circle">
+                    <h4 class="timeline__stage-mum">2018</h4>
+                    <img src="./media/about/stage-itembg1.svg" alt="stage-bg">
+                  </div>
+                  <p class="timeline__text">Founded the company in Moscow with a focus on enterprise AI solutions</p>
+                </div>
+                <div class="timeline__item timeline__item--center">
+                  <div class="timeline__line"></div>
+                  <div class="timeline__line"></div>
+                  <div class="timeline__circle">
+                    <h4 class="timeline__stage-mum">2020</h4>
+                    <img src="./media/about/stage-itembg1.svg" alt="stage-bg">
+                  </div>
+                  <p class="timeline__text">The first international project in the UAE with savings of $1M+ for the
+                    client</p>
+                </div>
+
+                <div class="timeline__item">
+                  <div class="timeline__circle">
+                    <h4 class="timeline__stage-mum">2023</h4>
+                    <img src="./media/about/stage-itembg1.svg" alt="stage-bg">
+                  </div>
+                  <p class="timeline__text">Launched an R&D center in the USA and expanded the development team</p>
+                </div>
+              </div>
+            </div>
+            <div class="our-story__stats">
+              <div class="our-story__stats-container">
+                <div class="our-story__stats-item">
+                  <div class="our-story__stats-value">50+</div>
+                  <div class="our-story__stats-text">Implemented<br>solutions</div>
+                </div>
+                <div class="our-story__stats-item">
+                  <div class="our-story__stats-value">90%</div>
+                  <div class="our-story__stats-text">Clients with a<br>turnover of over $10M</div>
+                </div>
+                <div class="our-story__stats-item">
+                  <div class="our-story__stats-value">24/7</div>
+                  <div class="our-story__stats-text">Client<br>support</div>
+                </div>
+                <div class="our-story__stats-item">
+                  <div class="our-story__stats-value">4</div>
+                  <div class="our-story__stats-text">Countries of<br>presence</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our-solutions">
+        <div class="container">
+          <div class="our-solutions__inner">
+            <div class="our-solutions__info-wrapper">
+              <div class="our-solutions__title-wrapper title-wrapper">
+                <h2 class="our-solutions__title title">Every service is your next step to leadership
+                </h2>
+              </div>
+              <div class="our-solutions__text-wrapper text-wrapper">
+                <p class=" our-solutions__text text">
+                  We develop exclusive Al solutions that give you a strategic advantage
+                </p>
+              </div>
+            </div>
+            <div class="our-solutions__grid">
+              <div class="our-solutions__grid-item">
+                <div class="our-solutions__grid-icon">
+                  <div class="grid-icon__inner">
+                    <img src="./media/home/calculator.svg" alt="calculator icon">
+                  </div>
+                </div>
+                <div class="our-solutions__grid-text">
+                  <div class="solutions__subtitle-wrapper">
+                    <h3 class="solutions__subtitle">Accounting Automation</h3>
+                  </div>
+                  <div class="solutions__text-wrapper">
+                    <p class="solutions__text text">Comprehensive Al-driven accounting solutions that reduce errors,
+                      optimize processes, and provide real-time financial insights.
+                    </p>
+                  </div>
+                </div>
+                <ul class="services__features">
+                  <li class="services__feature"><img src="./media/about/check-mark.svg" alt="check-mark">Forecast with
+                    95% accuracy</li>
+                  <li class="services__feature"><img src="./media/about/check-mark.svg" alt="check-mark">Uncover hidden
+                    opportunities</li>
+                  <li class="services__feature"><img src="./media/about/check-mark.svg" alt="check-mark">Generate
+                    personalized insights</li>
+                </ul>
+                <a href="#" class="services__button">Order a solution <svg width="29" height="28" viewBox="0 0 29 28"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.83301 14H20.4997M20.4997 14L15.833 9.33333M20.4997 14L15.833 18.6667" stroke="#2A2B6D"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></a>
+              </div>
+              <div class="our-solutions__grid-item">
+                <div class="our-solutions__grid-icon">
+                  <div class="grid-icon__inner">
+                    <img src="./media/home/gear.svg" alt="gear icon">
+                  </div>
+                </div>
+                <div class="our-solutions__grid-text">
+                  <div class="solutions__subtitle-wrapper">
+                    <h3 class="solutions__subtitle">Accounting Automation</h3>
+                  </div>
+                  <div class="solutions__text-wrapper">
+                    <p class="solutions__text text">Comprehensive Al-driven accounting solutions that reduce errors,
+                      optimize processes, and provide real-time financial insights.
+                    </p>
+                  </div>
+                </div>
+                <ul class="services__features">
+                  <li class="services__feature"><img src="./media/about/check-mark.svg" alt="check-mark">Forecast with
+                    95% accuracy</li>
+                  <li class="services__feature"><img src="./media/about/check-mark.svg" alt="check-mark">Uncover hidden
+                    opportunities</li>
+                  <li class="services__feature"><img src="./media/about/check-mark.svg" alt="check-mark">Generate
+                    personalized insights</li>
+                </ul>
+                <a href="#" class="services__button"><span>Order a solution</span> <svg width="29" height="28"
+                    viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.83301 14H20.4997M20.4997 14L15.833 9.33333M20.4997 14L15.833 18.6667" stroke="#2A2B6D"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></a>
+              </div>
+              <div class="our-solutions__grid-item">
+                <div class="our-solutions__grid-icon">
+                  <div class="grid-icon__inner">
+                    <img src="./media/home/truck.svg" alt="truck icon">
+                  </div>
+                </div>
+                <div class="our-solutions__grid-text">
+                  <div class="solutions__subtitle-wrapper">
+                    <h3 class="solutions__subtitle">Accounting Automation</h3>
+                  </div>
+                  <div class="solutions__text-wrapper">
+                    <p class="solutions__text text">Comprehensive Al-driven accounting solutions that reduce errors,
+                      optimize processes, and provide real-time financial insights.
+                    </p>
+                  </div>
+                </div>
+                <ul class="services__features">
+                  <li class="services__feature"><img src="./media/about/check-mark.svg" alt="check-mark">Forecast with
+                    95% accuracy</li>
+                  <li class="services__feature"><img src="./media/about/check-mark.svg" alt="check-mark">Uncover hidden
+                    opportunities</li>
+                  <li class="services__feature"><img src="./media/about/check-mark.svg" alt="check-mark">Generate
+                    personalized insights</li>
+                </ul>
+                <a href="#" class="services__button">Order a solution <svg width="29" height="28" viewBox="0 0 29 28"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.83301 14H20.4997M20.4997 14L15.833 9.33333M20.4997 14L15.833 18.6667" stroke="#2A2B6D"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></a>
+              </div>
+              <div class="our-solutions__grid-item">
+                <div class="our-solutions__grid-icon">
+                  <div class="grid-icon__inner">
+                    <img src="./media/home/bar-chart-analysis.svg" alt="bar-chart-analysis icon">
+                  </div>
+                </div>
+                <div class="our-solutions__grid-text">
+                  <div class="solutions__subtitle-wrapper">
+                    <h3 class="solutions__subtitle">Accounting Automation</h3>
+                  </div>
+                  <div class="solutions__text-wrapper">
+                    <p class="solutions__text text">Comprehensive Al-driven accounting solutions that reduce errors,
+                      optimize processes, and provide real-time financial insights.
+                    </p>
+                  </div>
+                </div>
+                <ul class="services__features">
+                  <li class="services__feature"><img src="./media/about/check-mark.svg" alt="check-mark">Forecast with
+                    95% accuracy</li>
+                  <li class="services__feature"><img src="./media/about/check-mark.svg" alt="check-mark">Uncover hidden
+                    opportunities</li>
+                  <li class="services__feature"><img src="./media/about/check-mark.svg" alt="check-mark">Generate
+                    personalized insights</li>
+                </ul>
+                <a href="#" class="services__button">Order a solution <svg width="29" height="28" viewBox="0 0 29 28"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.83301 14H20.4997M20.4997 14L15.833 9.33333M20.4997 14L15.833 18.6667" stroke="#2A2B6D"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></a>
+              </div>
+              <div class="our-solutions__grid-item">
+                <div class="our-solutions__grid-icon">
+                  <div class="grid-icon__inner">
+                    <img src="./media/home/book.svg" alt="book icon">
+                  </div>
+                </div>
+                <div class="our-solutions__grid-text">
+                  <div class="solutions__subtitle-wrapper">
+                    <h3 class="solutions__subtitle">Accounting Automation</h3>
+                  </div>
+                  <div class="solutions__text-wrapper">
+                    <p class="solutions__text text">Comprehensive Al-driven accounting solutions that reduce errors,
+                      optimize processes, and provide real-time financial insights.
+                    </p>
+                  </div>
+                </div>
+                <ul class="services__features">
+                  <li class="services__feature"><img src="./media/about/check-mark.svg" alt="check-mark">Forecast with
+                    95% accuracy</li>
+                  <li class="services__feature"><img src="./media/about/check-mark.svg" alt="check-mark">Uncover hidden
+                    opportunities</li>
+                  <li class="services__feature"><img src="./media/about/check-mark.svg" alt="check-mark">Generate
+                    personalized insights</li>
+                </ul>
+                <a href="#" class="services__button">Order a solution <svg width="29" height="28" viewBox="0 0 29 28"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.83301 14H20.4997M20.4997 14L15.833 9.33333M20.4997 14L15.833 18.6667" stroke="#2A2B6D"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></a>
+              </div>
+              <div class="our-solutions__grid-item">
+                <div class="our-solutions__grid-icon">
+                  <div class="grid-icon__inner">
+                    <img src="./media/home/lightbulb-on.svg" alt="lightbulb-on icon">
+                  </div>
+                </div>
+                <div class="our-solutions__grid-text">
+                  <div class="solutions__subtitle-wrapper">
+                    <h3 class="solutions__subtitle">Accounting Automation</h3>
+                  </div>
+                  <div class="solutions__text-wrapper">
+                    <p class="solutions__text text">Comprehensive Al-driven accounting solutions that reduce errors,
+                      optimize processes, and provide real-time financial insights.
+                    </p>
+                  </div>
+                </div>
+                <ul class="services__features">
+                  <li class="services__feature"><img src="./media/about/check-mark.svg" alt="check-mark">Forecast with
+                    95% accuracy</li>
+                  <li class="services__feature"><img src="./media/about/check-mark.svg" alt="check-mark">Uncover hidden
+                    opportunities</li>
+                  <li class="services__feature"><img src="./media/about/check-mark.svg" alt="check-mark">Generate
+                    personalized insights</li>
+                </ul>
+                <a href="#" class="services__button">Order a solution <svg width="29" height="28" viewBox="0 0 29 28"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.83301 14H20.4997M20.4997 14L15.833 9.33333M20.4997 14L15.833 18.6667" stroke="#2A2B6D"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="consultation">
+
+        <div class="container">
+          <div class="consultation__container">
+            <div class="consultation__form-block">
+              <div class="consultation__form-top">
+                <div class="consultation__title-wrapper">
+                  <h2 class="consultation__title title">Answer 3 questions</h2>
+                  <p class="consultation__subtitle">
+                    We will prepare a personalized proposal for your business
+                  </p>
+                </div>
+                <div class="consultation__decor-line"></div>
+                <form class="consultation__quiz">
+                  <div class="consultation__field">
+                    <label class="consultation__label">1. What is your industry?</label>
+                    <select class="consultation__select">
+                      <option>Select your industry</option>
+                      <option>Select your industry</option>
+                      <option>Select your industry</option>
+                    </select>
+                  </div>
+
+                  <div class="consultation__field">
+                    <label class="consultation__label">2. Annual turnover of the company (in USD/rubles)?</label>
+                    <select class="consultation__select">
+                      <option>Select a range</option>
+                      <option>Select your industry</option>
+                      <option>Select your industry</option>
+                    </select>
+                  </div>
+
+                  <div class="consultation__field">
+                    <label class="consultation__label">3. What is the key challenge you are facing?</label>
+                    <textarea class="consultation__textarea" placeholder="Describe your task..."></textarea>
+                  </div>
+                </form>
+              </div>
+
+              <div class="consultation__form-bottom">
+                <div class="consultation__form-bottom-inner">
+                  <h3 class="consultation__form-title">
+                    Book a consultation with the development team<br>
+                    <strong>1 hour free of charge</strong>
+                  </h3>
+                  <div class="consultation__decor-line"></div>
+                  <form class="consultation__request" id="consultationForm">
+                    <div class="consultation__inputs">
+                      <div class="consultation__inputs-field">
+                        <label class="consultation__label">Name</label>
+                        <input type="text" name="name" class="consultation__input" placeholder="Enter your name"
+                          required />
+                      </div>
+                      <div class="consultation__inputs-field">
+                        <label class="consultation__label">Email</label>
+                        <input type="email" name="email" class="consultation__input" placeholder="Enter your email"
+                          required />
+                      </div>
+                    </div>
+                    <button type="submit" class="consultation__submit">Send your request</button>
+                  </form>
+
+                  <p class="form__error" id="formError" style="display: none; color: red; font-size: 0.875rem;"></p>
+
+                </div>
+                <p class="consultation__note">
+                  By clicking the button, you agree to the terms of processing personal data
+                </p>
+
+              </div>
+            </div>
+
+            <div class="consultation__image-block">
+              <img src="media/about/teamMeeting.jpg" alt="Team meeting" />
+              <div class="consultation__image-blur"></div>
+            </div>
+
+          </div>
+        </div>
+        <svg width="1440" height="465" viewBox="0 0 1440 465" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1611.59 300.097C1271.74 523.385 1081.04 516.523 741.294 300.097V164.737C1085.04 411.363 1275.75 426.289 1611.59 164.737V300.097Z"
+            fill="#29ABE2" fill-opacity="0.3" />
+          <path
+            d="M-129 164.903C210.842 -58.3847 401.546 -51.5236 741.292 164.903V300.263C397.544 53.6373 206.832 38.7105 -129 300.263L-129 164.903Z"
+            fill="#29ABE2" fill-opacity="0.3" />
+        </svg>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="footer__contact-form">
+        <div class="container">
+          <div class="contact-form_inner">
+            <div class="contact-form__content">
+              <div class="contact-form__text text">
+                <h3 class="contact-form__title title">
+                  Get notified when we launch
+                </h3>
+                <p class="contact-form__description">
+                  Stay up to date with the latest news, announcements, and articles.
+                </p>
+              </div>
+              <form class="newsletter__form">
+                <input type="email" class="contact-form__input" placeholder="Enter your email" required>
+                <button type="submit" class="contact-form__button button">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__inner">
+        <div class="footer__container container">
+          <div class="footer__logo-wrapper">
+            <div class="footer__logo">
+              <img src="media/footer/FooterLogo.svg" alt="logo">
+            </div>
+            <p class="footer__description-text text">
+              AI-powered solutions for enterprise optimization and competitive advantage.
+            </p>
+          </div>
+          <div class="footer__nav-wrapper">
+            <nav class="footer__nav">
+              <div class="footer__nav-col">
+                <h4>Product</h4>
+                <ul>
+                  <li><a href="#">Overview</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Solutions <span class="tag-new">New</span></a></li>
+                  <li><a href="#">Tutorials</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Releases</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-col">
+                <h4>Company</h4>
+                <ul>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Media kit</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-col">
+                <h4>Resources</h4>
+                <ul>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Newsletter</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Help centre</a></li>
+                  <li><a href="#">Tutorials</a></li>
+                  <li><a href="#">Support</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-col">
+                <h4>Social</h4>
+                <ul>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">LinkedIn</a></li>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">GitHub</a></li>
+                  <li><a href="#">AngelList</a></li>
+                  <li><a href="#">Dribbble</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-col">
+                <h4>Legal</h4>
+                <ul>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Cookies</a></li>
+                  <li><a href="#">Licenses</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner">
+            <p>© 2023 KITAEV Technologies. All rights reserved.</p>
+            <div class="footer__icons">
+              <!-- сюда можно вставить SVG или иконки из Font Awesome -->
+              <a href="#"><img src="media/socials/x-icon.svg" alt="X"></a>
+              <a href="#"><img src="media/socials/li-icon.svg" alt="LinkedIn"></a>
+              <a href="#"><img src="media/socials/fb-icon.svg" alt="Facebook"></a>
+              <a href="#"><img src="media/socials/gh-icon.svg" alt="GitHub"></a>
+              <a href="#"><img src="media/socials/peace-icon.svg" alt="AngelList"></a>
+              <a href="#"><img src="media/socials/dribbbleicon.svg" alt="Dribbble"></a>
+              <a href="#"><img src="media/socials/cube-icon.svg" alt="Cube"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+<!-- <script type="module" src="./js/swiper-bundle.min.js"></script> -->
+
+</html>

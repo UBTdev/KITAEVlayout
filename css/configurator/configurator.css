@@ -1,0 +1,324 @@
+.configurator {}
+
+.configurator__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.configurator__title-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.configurator__title-wrapper h1,
+.configurator__title-wrapper p {
+  max-width: 890px;
+}
+
+.configurator__title {
+  font-family: 'League Spartan';
+  font-weight: 600;
+  font-size: 64px;
+  text-align: center;
+  color: #2a2b6d;
+  line-height: 131%;
+}
+
+.configurator__title span {
+  color: #259CCE;
+}
+
+.configurator__subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #4b5563;
+}
+
+
+
+.configurator__subtitle {}
+
+/* ================== */
+/* Блоки */
+.configurator__steps-wrapper {}
+
+.configurator__steps-list {
+  /* display: flex; */
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: start;
+  gap: 10px;
+}
+
+.configurator__steps-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  z-index: 2;
+
+}
+
+.configurator__step-num {
+  border: 1px solid #1D79A0;
+  color: #1D79A0;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  padding-top: 2px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background: #fff;
+}
+
+.configurator__steps-text {
+  line-height: 120%;
+}
+
+.configurator__steps-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1D79A0;
+}
+
+.configurator__steps-discr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #4b5563;
+}
+
+/* SVG элементы (если нужно стилизовать) */
+.configurator__steps-wrapper {
+  position: relative;
+}
+
+.configurator__steps-wrapper svg {
+  /* display: none; */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 16px;
+}
+
+.configurator__steps-wrapper path {}
+
+/* ============================ */
+.solution-configurator {
+  border: 1px solid #EAEAF0;
+  border-radius: 24px;
+  padding: 40px;
+  /* width: 996px; */
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.solution-configurator__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.solution-configurator__title {
+  font-weight: 500;
+  font-size: var(--secondary-element-title);
+  color: #2A2B6D;
+}
+
+.solution-configurator__subtitle {
+  font-weight: 400;
+  font-size: var(--element-subtitle);
+}
+
+.configurator__decor-line {
+  background: #EAEAF0;
+  height: 1px;
+  width: 100%;
+}
+
+.configurator__options-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Элементы опций */
+.configurator__option {
+  border: 2px solid #d1d5db;
+  border-radius: 12px;
+  padding: 16px 24px;
+  width: 100%;
+  height: 58px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all .3s ease;
+}
+.configurator__option-inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.configurator__option:has(input[type="radio"]:checked) {
+  border: 2px solid #29ABE2;
+  background-color: #EAF7FC;
+  transition: all .3s ease;
+}
+
+
+.configurator__option-inner input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.configurator__option-inner {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+}
+
+.configurator__option-inner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid #9ca3af;
+  border-radius: 50%;
+  background-color: white;
+  transition: all .3s ease;
+}
+
+.configurator__option:has(input[type="radio"]:checked) .configurator__option-inner::before {
+  border: 2px solid #29ABE2;
+  transition: all .3s ease;
+}
+
+.configurator__option-inner {}
+
+.configurator__ooption-name {}
+
+/* Обратите внимание на опечатку (две "o") */
+.configurator__option-value {
+font-weight: 700;
+font-size: 18px;
+color: #1D79A0;
+}
+
+/* Нативные элементы */
+input[type="radio"]:checked {
+  /* border: 2px solid #4e96f1;
+  background-color: #eaf4ff; */
+}
+
+/* ============================ */
+.ai-solution-section {
+  background: #fff;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.ai-form {
+  background: #f9f9fb;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  max-width: 600px;
+  width: 100%;
+}
+
+.ai-form h3 {
+  font-size: 22px;
+  color: #1d1d4f;
+  margin-bottom: 8px;
+}
+
+.ai-form p {
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.ai-option {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 2px solid #e2e6f0;
+  border-radius: 12px;
+  padding: 14px 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.ai-option:hover {
+  border-color: #4e96f1;
+}
+
+.ai-option input[type="radio"] {
+  /* display: none;  */
+}
+
+.ai-option input[type="radio"]:checked + .ai-content {
+  border: 2px solid #4e96f1;
+  background-color: #eaf4ff;
+}
+
+.ai-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.ai-title {
+  font-weight: 600;
+  color: #1d1d4f;
+}
+
+.ai-price {
+  font-weight: 600;
+  color: #3391e7;
+}
+
+.ai-next-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  background: #0d75e0;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.ai-next-btn:hover {
+  background: #095ec2;
+}   

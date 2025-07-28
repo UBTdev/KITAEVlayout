@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>KITAEV</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="body">
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo-wrapper">
+            <img src="./media/header/logo.svg" alt="site-logo" />
+            <img src="./media/header/whiteLogo.svg" alt="site-logo" />
+          </div>
+          <div class="header__nav-wrapper">
+            <nav class="header_nav nav">
+              <ul class="header__nav-list nav-list">
+                <li class="header__nav-item nav-item">
+                  <a href="./">Home</a>
+                </li>
+                <li class="header__nav-item nav-item">
+                  <a href="./about.html">About us</a>
+                </li>
+                <li class="header__nav-item nav-item">
+                  <a href="./services.html">Product</a>
+                </li>
+                <li class="header__nav-item nav-item">
+                  <a href="./contact.html">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="mobile-nav">
+              <ul class="mobile-nav__menu">
+                <li><a href="./">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Product</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li> <a href="#" class="mobile-language-btn">
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 21a8.724 8.724 0 01-3.5-.71 9.123 9.123 0 01-2.86-1.93 9.162 9.162 0 01-1.93-2.86A8.674 8.674 0 013 12c0-1.243.237-2.41.71-3.503A9.118 9.118 0 015.64 5.64 9.184 9.184 0 018.5 3.71 8.723 8.723 0 0112 3c1.243 0 2.41.237 3.503.71a9.13 9.13 0 012.858 1.93 9.157 9.157 0 011.929 2.857A8.722 8.722 0 0121 12a8.724 8.724 0 01-.71 3.5 9.123 9.123 0 01-1.93 2.86 9.172 9.172 0 01-2.857 1.93A8.668 8.668 0 0112 21zm0-.992a14.959 14.959 0 001.452-2.221c.38-.727.69-1.54.929-2.44H9.619c.265.95.58 1.79.948 2.516.368.727.846 1.442 1.433 2.145zm-1.273-.15c-.467-.55-.893-1.23-1.278-2.04a11.683 11.683 0 01-.86-2.472H4.754a7.943 7.943 0 002.437 3.06 7.358 7.358 0 003.536 1.452zm2.546 0a7.359 7.359 0 003.536-1.452 7.943 7.943 0 002.437-3.06h-3.834a17.26 17.26 0 01-.957 2.491c-.385.81-.78 1.484-1.182 2.021zm-8.927-5.511h4.035c-.076-.41-.13-.81-.16-1.2a13.977 13.977 0 01-.001-2.294c.031-.389.085-.789.16-1.2H4.347a8.156 8.156 0 00-.256 3.562c.06.409.146.786.255 1.131m5.035 0h5.238c.076-.41.13-.803.16-1.18a14.059 14.059 0 00.001-2.332c-.031-.376-.085-.77-.16-1.18H9.38c-.075.41-.129.803-.16 1.18-.031.376-.047.765-.047 1.166a12.148 12.148 0 00.208 2.346zm6.239 0h4.034c.109-.346.194-.723.255-1.131a8.261 8.261 0 000-2.43 7.307 7.307 0 00-.255-1.131h-4.035c.076.41.13.81.16 1.199a14.001 14.001 0 01.001 2.294c-.031.39-.085.79-.16 1.2m-.208-5.693h3.834c-.586-1.27-1.389-2.29-2.408-3.06-1.02-.77-2.208-1.261-3.565-1.471.467.614.886 1.316 1.259 2.107.373.79.666 1.598.88 2.424zm-5.793 0h4.762a13.82 13.82 0 00-.977-2.546A11.147 11.147 0 0012 3.992a11.105 11.105 0 00-1.404 2.116c-.387.76-.714 1.608-.977 2.546zm-4.864 0h3.834a13.8 13.8 0 01.88-2.424 11.74 11.74 0 011.259-2.107c-1.37.21-2.56.704-3.574 1.48-1.013.777-1.813 1.794-2.4 3.05"
+                        fill="#2A2B6D" />
+                    </svg>
+                    <span>EN</span>
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 10l-4 4-4-4" stroke="#2A2B6D" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__btn-wrapper btn-wrapper">
+            <a href="#" class="language-btn">
+              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 21a8.724 8.724 0 01-3.5-.71 9.123 9.123 0 01-2.86-1.93 9.162 9.162 0 01-1.93-2.86A8.674 8.674 0 013 12c0-1.243.237-2.41.71-3.503A9.118 9.118 0 015.64 5.64 9.184 9.184 0 018.5 3.71 8.723 8.723 0 0112 3c1.243 0 2.41.237 3.503.71a9.13 9.13 0 012.858 1.93 9.157 9.157 0 011.929 2.857A8.722 8.722 0 0121 12a8.724 8.724 0 01-.71 3.5 9.123 9.123 0 01-1.93 2.86 9.172 9.172 0 01-2.857 1.93A8.668 8.668 0 0112 21zm0-.992a14.959 14.959 0 001.452-2.221c.38-.727.69-1.54.929-2.44H9.619c.265.95.58 1.79.948 2.516.368.727.846 1.442 1.433 2.145zm-1.273-.15c-.467-.55-.893-1.23-1.278-2.04a11.683 11.683 0 01-.86-2.472H4.754a7.943 7.943 0 002.437 3.06 7.358 7.358 0 003.536 1.452zm2.546 0a7.359 7.359 0 003.536-1.452 7.943 7.943 0 002.437-3.06h-3.834a17.26 17.26 0 01-.957 2.491c-.385.81-.78 1.484-1.182 2.021zm-8.927-5.511h4.035c-.076-.41-.13-.81-.16-1.2a13.977 13.977 0 01-.001-2.294c.031-.389.085-.789.16-1.2H4.347a8.156 8.156 0 00-.256 3.562c.06.409.146.786.255 1.131m5.035 0h5.238c.076-.41.13-.803.16-1.18a14.059 14.059 0 00.001-2.332c-.031-.376-.085-.77-.16-1.18H9.38c-.075.41-.129.803-.16 1.18-.031.376-.047.765-.047 1.166a12.148 12.148 0 00.208 2.346zm6.239 0h4.034c.109-.346.194-.723.255-1.131a8.261 8.261 0 000-2.43 7.307 7.307 0 00-.255-1.131h-4.035c.076.41.13.81.16 1.199a14.001 14.001 0 01.001 2.294c-.031.39-.085.79-.16 1.2m-.208-5.693h3.834c-.586-1.27-1.389-2.29-2.408-3.06-1.02-.77-2.208-1.261-3.565-1.471.467.614.886 1.316 1.259 2.107.373.79.666 1.598.88 2.424zm-5.793 0h4.762a13.82 13.82 0 00-.977-2.546A11.147 11.147 0 0012 3.992a11.105 11.105 0 00-1.404 2.116c-.387.76-.714 1.608-.977 2.546zm-4.864 0h3.834a13.8 13.8 0 01.88-2.424 11.74 11.74 0 011.259-2.107c-1.37.21-2.56.704-3.574 1.48-1.013.777-1.813 1.794-2.4 3.05"
+                  fill="#2A2B6D" />
+              </svg>
+              <span>EN</span>
+              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 10l-4 4-4-4" stroke="#2A2B6D" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="#" class="get-started-btn button">Get Started</a>
+            <a href="#" class="mobile-nav__btn">
+              <span class="mobile-nav__btn-icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__text-wrapper">
+              <div class="hero__text-inner">
+                <div class="hero__text-container">
+                  <div class="hero__title-wrapper">
+                    <h1 class="hero__title title">
+                      Turn your business challenges into a competitive advantage
+                      <span class="hero__accent-text">with AI</span>
+                    </h1>
+                  </div>
+                  <div class="hero__text-inner">
+                    <p class="hero__text text">
+                      We develop intelligent systems to automate and optimize
+                      business processes. Only personalized solutions with
+                      proven effectiveness.
+                    </p>
+                  </div>
+                  <div class="hero__button-wrapper">
+                    <a href="#" class="hero__button button">Quick Audit
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 12H17M17 12L13 8M17 12L13 16" stroke="#2A2B6D" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="hero__img-container">
+                  <img src="./media/hero/owner.png" alt="owner" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hero-stats">
+        <div class="container">
+          <div class="stats">
+            <div class="stats__inner">
+              <div class="stats__item">
+                <div class="stats__value title">15+</div>
+                <div class="stats__description">Successful Projects</div>
+              </div>
+              <div class="stats__item">
+                <div class="stats__value title">150m</div>
+                <div class="stats__description">Saved to Clients</div>
+              </div>
+              <div class="stats__item">
+                <div class="stats__value title">12-24</div>
+                <div class="stats__description">Months Payback</div>
+              </div>
+              <div class="stats__item">
+                <div class="stats__value title">9.8/10</div>
+                <div class="stats__description">Average Client Score</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="about__inner">
+            <div class="about__title-wrapper title-wrapper">
+              <h2 class="about__title title">About Kitaev</h2>
+            </div>
+            <div class="about__accordion">
+              <div class="about__accordion-col">
+                <div class="accordion-col__inner">
+                  <div class="accordion__item tab-control tab-control--active">
+                    <h5 class="accordion__item-title title">Analysis</h5>
+                    <p class="accordion__item-text">
+                      Analyze your business processes, identify growth points
+                      and ROI from implementation.
+                    </p>
+                  </div>
+                  <div class="accordion__item tab-control">
+                    <h5 class="accordion__item-title title">Concept</h5>
+                    <p class="accordion__item-text">
+                      Analyze your business processes, identify growth points
+                      and ROI from implementation.
+                    </p>
+                  </div>
+                  <div class="accordion__item tab-control">
+                    <h5 class="accordion__item-title title">Support</h5>
+                    <p class="accordion__item-text">
+                      Analyze your business processes, identify growth points
+                      and ROI from implementation.
+                    </p>
+                  </div>
+                  <div class="accordion__item tab-control">
+                    <h5 class="accordion__item-title title">Implementation</h5>
+                    <p class="accordion__item-text">
+                      Analyze your business processes, identify growth points
+                      and ROI from implementation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="about__accordion-col">
+                <div class="accordion-col__inner">
+                  <div class="accordion__widget">
+                    <div class="accordion__widget-bg">
+                      <div class="accordion__widget-inner">
+                        <div class="accordion__widget-info">
+                          <h4 class="accordion__widget-title title">
+                            Project implementation according to the PML standard
+                          </h4>
+                          <p class="accordion__widget-text text">
+                            A clear process that guarantees results within the
+                            agreed timeframe and budget
+                          </p>
+                        </div>
+                      </div>
+                      <span>
+                        <svg width="58" height="12" viewBox="0 0 58 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="6" cy="6" r="6" fill="#1D79A0" />
+                          <circle cx="26" cy="6" r="6" fill="#259CCE" />
+                          <ellipse cx="46" cy="6" rx="5.5" ry="6" fill="#259CCE" />
+                        </svg>
+
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our-solutions">
+        <div class="container">
+          <div class="our-solutions__inner">
+            <div class="our-solutions__info-wrapper">
+              <div class="our-solutions__title-wrapper title-wrapper">
+                <h2 class="our-solutions__title title">Our Al Solutions
+                </h2>
+              </div>
+              <div class="our-solutions__text-wrapper text-wrapper">
+                <p class=" our-solutions__text text">
+                  Custom Al solutions designed to address your most critical business
+                  challenges.
+                </p>
+              </div>
+            </div>
+            <div class="our-solutions__grid">
+              <div class="our-solutions__grid-item">
+                <div class="our-solutions__grid-icon">
+                  <div class="grid-icon__inner">
+                    <img src="./media/home/calculator.svg" alt="calculator icon">
+                  </div>
+                </div>
+                <div class="our-solutions__grid-text">
+                  <div class="solutions__subtitle-wrapper">
+                    <h3 class="solutions__subtitle">Accounting Automation</h3>
+                  </div>
+                  <div class="solutions__text-wrapper">
+                    <p class="solutions__text text">Comprehensive Al-driven accounting solutions that reduce errors,
+                      optimize processes, and provide real-time financial insights.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="our-solutions__grid-item">
+                <div class="our-solutions__grid-icon">
+                  <div class="grid-icon__inner">
+                    <img src="./media/home/gear.svg" alt="gear icon">
+                  </div>
+                </div>
+                <div class="our-solutions__grid-text">
+                  <div class="solutions__subtitle-wrapper">
+                    <h3 class="solutions__subtitle">Accounting Automation</h3>
+                  </div>
+                  <div class="solutions__text-wrapper">
+                    <p class="solutions__text text">Comprehensive Al-driven accounting solutions that reduce errors,
+                      optimize processes, and provide real-time financial insights.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="our-solutions__grid-item">
+                <div class="our-solutions__grid-icon">
+                  <div class="grid-icon__inner">
+                    <img src="./media/home/truck.svg" alt="truck icon">
+                  </div>
+                </div>
+                <div class="our-solutions__grid-text">
+                  <div class="solutions__subtitle-wrapper">
+                    <h3 class="solutions__subtitle">Accounting Automation</h3>
+                  </div>
+                  <div class="solutions__text-wrapper">
+                    <p class="solutions__text text">Comprehensive Al-driven accounting solutions that reduce errors,
+                      optimize processes, and provide real-time financial insights.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="our-solutions__grid-item">
+                <div class="our-solutions__grid-icon">
+                  <div class="grid-icon__inner">
+                    <img src="./media/home/bar-chart-analysis.svg" alt="bar-chart-analysis icon">
+                  </div>
+                </div>
+                <div class="our-solutions__grid-text">
+                  <div class="solutions__subtitle-wrapper">
+                    <h3 class="solutions__subtitle">Accounting Automation</h3>
+                  </div>
+                  <div class="solutions__text-wrapper">
+                    <p class="solutions__text text">Comprehensive Al-driven accounting solutions that reduce errors,
+                      optimize processes, and provide real-time financial insights.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="our-solutions__grid-item">
+                <div class="our-solutions__grid-icon">
+                  <div class="grid-icon__inner">
+                    <img src="./media/home/book.svg" alt="book icon">
+                  </div>
+                </div>
+                <div class="our-solutions__grid-text">
+                  <div class="solutions__subtitle-wrapper">
+                    <h3 class="solutions__subtitle">Accounting Automation</h3>
+                  </div>
+                  <div class="solutions__text-wrapper">
+                    <p class="solutions__text text">Comprehensive Al-driven accounting solutions that reduce errors,
+                      optimize processes, and provide real-time financial insights.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="our-solutions__grid-item">
+                <div class="our-solutions__grid-icon">
+                  <div class="grid-icon__inner">
+                    <img src="./media/home/lightbulb-on.svg" alt="lightbulb-on icon">
+                  </div>
+                </div>
+                <div class="our-solutions__grid-text">
+                  <div class="solutions__subtitle-wrapper">
+                    <h3 class="solutions__subtitle">Accounting Automation</h3>
+                  </div>
+                  <div class="solutions__text-wrapper">
+                    <p class="solutions__text text">Comprehensive Al-driven accounting solutions that reduce errors,
+                      optimize processes, and provide real-time financial insights.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="our-solutions__btn-wrapper">
+              <a href="#" class="our-solutions__see-more-btn button white-button">
+                <span>View all solutions</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 12H17M17 12L13 8M17 12L13 16" stroke="#2A2B6D" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="results">
+        <div class="container">
+          <div class="results__inner">
+            <div class="results__info-wrapper">
+              <div class="results__title-wrapper  title-wrapper">
+                <h2 class="results__title title">Implementation results
+                </h2>
+              </div>
+              <div class="results__text-wrapper text-wrapper">
+                <p class=" results__text text">
+                  Examples of implemented projects with measurable business indicators
+                </p>
+              </div>
+            </div>
+            <div class="results__content-wrapper">
+              <div class="results__info-tabble">
+                <div class="results__info-banner">
+                  <!--========================================================================  -->
+                  <div class="case-study">
+                    <div class="case-study__header">
+                      <div class="case-study__icon">
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M9.75012 18.9166C9.75012 20.1132 8.78007 21.0833 7.58346 21.0833C6.38684 21.0833 5.41679 20.1132 5.41679 18.9166M9.75012 18.9166C9.75012 17.72 8.78007 16.75 7.58346 16.75C6.38684 16.75 5.41679 17.72 5.41679 18.9166M9.75012 18.9166H16.2501M5.41679 18.9166V18.9166C4.22017 18.9166 3.25012 17.9466 3.25012 16.75V10.1166C3.25012 8.36675 3.25012 7.49181 3.69575 6.87846C3.83967 6.68037 4.01387 6.50617 4.21196 6.36225C4.82531 5.91663 5.70025 5.91663 7.45012 5.91663H9.34179C11.0917 5.91663 11.9666 5.91663 12.58 6.36225C12.778 6.50617 12.9522 6.68037 13.0962 6.87846C13.5418 7.49181 13.5418 8.36675 13.5418 10.1166V11.3333V11.3333C13.5418 10.4803 13.5418 10.0538 13.652 9.70805C13.8816 8.98761 14.4461 8.42311 15.1665 8.19348C15.5123 8.08329 15.9388 8.08329 16.7918 8.08329H17.559C18.5677 8.08329 19.0721 8.08329 19.5073 8.26703C19.7285 8.36043 19.934 8.48744 20.1165 8.64355C20.4755 8.95062 20.701 9.40173 21.1521 10.304L22.3067 12.6131C22.5028 13.0053 22.6008 13.2014 22.6604 13.41C22.6802 13.4794 22.6968 13.5496 22.7101 13.6205C22.7501 13.8338 22.7501 14.053 22.7501 14.4914V16.75C22.7501 17.9466 21.7801 18.9166 20.5835 18.9166V18.9166M20.5835 18.9166C20.5835 20.1132 19.6134 21.0833 18.4168 21.0833C17.2202 21.0833 16.2501 20.1132 16.2501 18.9166M20.5835 18.9166C20.5835 17.72 19.6134 16.75 18.4168 16.75C17.2202 16.75 16.2501 17.72 16.2501 18.9166M16.2501 10.7916H18.4168L19.771 13.5H16.2501V10.7916Z"
+                            stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      <div class="case-study__title">
+                        <h3>Transportation of building materials</h3>
+                        <p class="case-study__industry">Industry: logistics (construction materials)</p>
+                      </div>
+                    </div>
+                    <div class="case-study__content">
+                      <div class="case-study__description">
+                        Implementation of a fleet management system for a fleet of 42 special vehicles with demand
+                        forecasting.
+                      </div>
+                      <div class="case-study__stats">
+                        <div class="case-study__stat">
+                          <p class="case-study__stat-title">COST REDUCTION</p>
+                          <p class="case-study__stat-value">38%</p>
+                        </div>
+                        <div class="case-study__stat">
+                          <p class="case-study__stat-title">ROI FOR 18 MO</p>
+                          <p class="case-study__stat-value">240%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======================================================================== -->
+
+                  <!-- ======================================================================== -->
+                </div>
+                <div class="results__info-banner">
+                  <div class="case-study__chart">
+                    <div class="case-study__stats">
+                      <div class="case-study__stat">
+                        <p class="case-study__stat-title">Cost Reduction</p>
+                        <p class="case-study__stat-value case-study__second-value">38%</p>
+                      </div>
+                      <div class="case-study__stat">
+                        <p class="case-study__stat-title">ROI FOR 18 MO</p>
+                        <p class="case-study__stat-value case-study__second-value">240%</p>
+                      </div>
+                    </div>
+                    <div class="case-study__graph">
+                      <!-- Сюда вставляется график -->
+                      <!-- <img src="graph-placeholder.svg" alt="Performance graph"> -->
+                      <svg width="100%" height="98" viewBox="0 0 405 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M2.00195 96.4948C53.3215 96.4948 47.2577 20.4047 98.5772 20.4047C149.897 20.4047 143.823 40.6952 195.143 40.6952C246.462 40.6952 238.558 74.03 289.877 74.03C341.197 74.03 349.889 91.1547 401.208 91.1547"
+                          stroke="#FFAE00" stroke-width="2.16585" stroke-linecap="round" />
+                        <path
+                          d="M2 96.4963C52.1428 96.4963 58.5482 43.5955 108.691 43.5955C158.834 43.5955 150.521 1.56488 200.664 1.56488C250.807 1.56488 249.848 60.9879 299.991 60.9879C350.134 60.9879 352.857 90.9379 403 90.9379"
+                          stroke="#29ABE2" stroke-width="2.16585" stroke-linecap="round" />
+                      </svg>
+
+                    </div>
+
+                    <div class="case-study__decor">
+                      <svg width="100%" height="25" viewBox="0 0 386 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.496277" width="50%" height="8.10933" rx="4.05467" fill="#EAEAF0" />
+                        <rect y="16.6059" width="100%" height="8.10933" rx="4.05467" fill="#EAEAF0" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="results__info-tabble">
+                <div class="results__info-banner results__accent-info-banner">
+                  <svg width="59" height="13" viewBox="0 0 59 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6.28125" cy="6.5" r="6" fill="#C58DF0" />
+                    <circle cx="29.2812" cy="6.5" r="6" fill="#FFCC5E" />
+                    <ellipse cx="52.7812" cy="6.5" rx="5.5" ry="6" fill="#40E986" />
+                  </svg>
+                  <!-- =================================================================== -->
+                  <div class="case-study__metrics">
+                    <div class="case-study__metric">
+                      <h3 class="case-study__metric-title">Forecast Accuracy</h3>
+                      <p class="case-study__metric-value case-study__second-value">92%</p>
+                      <div class="case-study__graph">
+                        <!-- График с линиями -->
+                        <svg width="100%" height="52" viewBox="0 0 203 52" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M2.00073 49.931C27.5016 49.931 24.4885 10.8149 49.9893 10.8149C75.4902 10.8149 72.4724 21.2457 97.9732 21.2457C123.474 21.2457 119.546 38.3824 145.047 38.3824C170.548 38.3824 174.867 47.1858 200.368 47.1858"
+                            stroke="#FFAE00" stroke-width="2.16585" stroke-linecap="round" />
+                          <path
+                            d="M2 49.9314C26.9162 49.9314 30.099 22.7363 55.0152 22.7363C79.9313 22.7363 75.8007 1.12933 100.717 1.12933C125.633 1.12933 125.157 31.6773 150.073 31.6773C174.989 31.6773 176.342 47.0739 201.259 47.0739"
+                            stroke="#29ABE2" stroke-width="2.16585" stroke-linecap="round" />
+                        </svg>
+
+                      </div>
+                      <div class="case-study__decor">
+                        <svg width="193" height="26" viewBox="0 0 193 26" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <rect y="0.931458" width="90.0468" height="8.10933" rx="4.05467" fill="#EAEAF0" />
+                          <rect y="17.041" width="192.957" height="8.10933" rx="4.05467" fill="#EAEAF0" />
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="case-study__metric">
+                      <h3 class="case-study__metric-title">Time Saving</h3>
+                      <div class="case-study__circle-chart">
+                        <!-- Круговая диаграмма -->
+                        <span class="case-study__metric-value">80%</span>
+                        <!-- <img src="circle-chart.svg" alt="Time saving chart"> -->
+                        <svg width="123" height="123" viewBox="0 0 123 123" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M119 61.5C119 29.7436 93.2564 4 61.5 4C29.7436 4 4 29.7436 4 61.5C4 93.2564 29.7436 119 61.5 119"
+                            stroke="#FDAE05" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+                          <rect x="17" y="17" width="89" height="89" rx="44.5" fill="#29ABE2" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- =================================================================== -->
+
+                  <!-- =================================================================== -->
+                </div>
+                <div class="results__info-banner analytics__info-banner">
+                  <div class="case-study">
+                    <div class="case-study__header">
+                      <div class="case-study__icon">
+                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7.7939 19.1272H18.6272M8.87724 15.8772V12.6272M13.2106 15.8772V10.4605M17.5439 15.8772V8.29384M11.2606 23.4605H15.1606C18.4103 23.4605 20.0352 23.4605 21.1743 22.6329C21.5422 22.3656 21.8657 22.0421 22.133 21.6742C22.9606 20.5352 22.9606 18.9103 22.9606 15.6605V11.7605C22.9606 8.51074 22.9606 6.88586 22.133 5.74677C21.8657 5.3789 21.5422 5.05538 21.1743 4.7881C20.0352 3.96051 18.4103 3.96051 15.1606 3.96051H11.2606C8.0108 3.96051 6.38592 3.96051 5.24684 4.7881C4.87896 5.05538 4.55544 5.3789 4.28816 5.74677C3.46057 6.88586 3.46057 8.51074 3.46057 11.7605V15.6605C3.46057 18.9103 3.46057 20.5352 4.28816 21.6742C4.55544 22.0421 4.87896 22.3656 5.24684 22.6329C6.38592 23.4605 8.0108 23.4605 11.2606 23.4605Z"
+                            stroke="white" stroke-width="1.625" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      <div class="case-study__title">
+                        <h3>Financial analytics</h3>
+                        <p class="case-study__industry">Industry: wholesale trade (FMCG)</p>
+                      </div>
+                    </div>
+                    <div class="case-study__description">
+                      Automating financial planning and forecasting for a chain of 28 stores.
+                    </div>
+
+                    <div class="case-study__stats">
+                      <div class="case-study__stats-inner">
+                        <div class="case-study__stat">
+                          <p class="case-study__stat-title">FORECAST ACCURACY</p>
+                          <p class="case-study__stat-value">92%</p>
+                        </div>
+                        <div class="case-study__stat">
+                          <p class="case-study__stat-title">TIME SAVING</p>
+                          <p class="case-study__stat-value">80%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section class="about-kitaev">
+        <div class="container">
+          <div class="about-kitaev__inner">
+            <div class="about-kitaev__info-wrapper">
+              <div class="about-kitaev__title-wrapper  title-wrapper">
+                <h2 class="about-kitaev__title title">KITAEV is your global partner
+                </h2>
+              </div>
+              <div class="about-kitaev__text-wrapper text-wrapper">
+                <p class=" about-kitaev__text text">
+                  We have been working since 2024, implementing innovative solutions in 4 countries.
+                  Each project is a unique development created for the specific tasks of your business.
+                </p>
+              </div>
+            </div>
+            <div class="about-kitaev__quote">
+              <blockquote>
+                “We don't offer template solutions. Our AI system is trainedon your company's data, ensuring
+                maximum relevance”
+              </blockquote>
+            </div>
+            <div class="ellipse">
+              <svg width="1200" height="524" viewBox="0 0 1200 524" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_292_3022)">
+                  <ellipse cx="660.5" cy="170.5" rx="660.5" ry="170.5" transform="matrix(1 0 0 -1 0 524)"
+                    fill="url(#paint0_linear_292_3022)" />
+                </g>
+                <defs>
+                  <filter id="filter0_f_292_3022" x="-500" y="-317" width="2321" height="1341"
+                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_292_3022" />
+                  </filter>
+                  <linearGradient id="paint0_linear_292_3022" x1="1321" y1="170.5" x2="73.0918" y2="170.5"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#06ACFF" />
+                    <stop offset="1" stop-color="#06ACFF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="container">
+          <div class="testimonials__inner">
+            <div class="testimonials__info-wrapper">
+              <div class="reviews__title-wrapper  title-wrapper">
+                <h2 class="reviews__title title">
+                  What our client say?
+                </h2>
+              </div>
+              <div class="reviews__text-wrapper text-wrapper">
+                <p class=" reviews__text text">
+                  Examples of implemented projects with measurable business indicators
+                </p>
+              </div>
+            </div>
+            <div class="testimonials__wrapper">
+              <div class="testimonials__swiper swiper">
+                <div class="testimonials__swiper-wrapper swiper-wrapper">
+                  <div class="testimonials__swiper-slide swiper-slide">
+                    <div class="testimonials__slide-inner">
+                      <div class="testimonial-text__wrapper">
+                        <div class="quote-start">
+                          <svg width="32" height="22" viewBox="0 0 32 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M25.0811 22C23.0782 22 21.4092 21.3139 20.074 19.9418C18.7691 18.5392 18.1166 16.5419 18.1166 13.9501C18.1166 11.5717 18.5718 9.46777 19.4822 7.63826C20.3926 5.80873 21.5306 4.25364 22.8962 2.97298C24.2617 1.69231 25.6425 0.701317 27.0384 0L29.4509 2.74429C28.6923 3.04921 27.8274 3.62855 26.8563 4.48233C25.9156 5.30561 25.0811 6.26611 24.3528 7.36382C23.6548 8.43104 23.2755 9.51351 23.2148 10.6112C23.4879 10.2453 23.9583 9.9404 24.6259 9.69646C25.2935 9.45253 25.9915 9.33056 26.7198 9.33056C28.0853 9.33056 29.2992 9.83368 30.3613 10.8399C31.4538 11.8157 32 13.203 32 15.0021C32 17.1365 31.3324 18.8441 29.9972 20.1247C28.6923 21.3749 27.0536 22 25.0811 22ZM6.96444 22C4.96159 22 3.29256 21.3139 1.95733 19.9418C0.652442 18.5392 0 16.5419 0 13.9501C0 11.5717 0.455192 9.46777 1.36558 7.63826C2.27596 5.80873 3.41394 4.25364 4.77952 2.97298C6.14509 1.69231 7.52584 0.701317 8.92176 0L11.3343 2.74429C10.5756 3.04921 9.71076 3.62855 8.73969 4.48233C7.79896 5.30561 6.96444 6.26611 6.23613 7.36382C5.53817 8.43104 5.15884 9.51351 5.09815 10.6112C5.37127 10.2453 5.84163 9.9404 6.50925 9.69646C7.17686 9.45253 7.87482 9.33056 8.60313 9.33056C9.96871 9.33056 11.1826 9.83368 12.2447 10.8399C13.3371 11.8157 13.8834 13.203 13.8834 15.0021C13.8834 17.1365 13.2157 18.8441 11.8805 20.1247C10.5756 21.3749 8.93694 22 6.96444 22Z"
+                              fill="#2A2B6D" />
+                          </svg>
+                        </div>
+                        <blockquote class="testimonial-text">
+                          KITAEV developed a logistics optimization system for us that reduced our costs by $200k in the
+                          first year. The results have exceeded expectations.
+                        </blockquote>
+                        <div class="quote-end">
+                          <svg width="32" height="22" viewBox="0 0 32 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M25.0811 22C23.0782 22 21.4092 21.3139 20.074 19.9418C18.7691 18.5392 18.1166 16.5419 18.1166 13.9501C18.1166 11.5717 18.5718 9.46777 19.4822 7.63826C20.3926 5.80873 21.5306 4.25364 22.8962 2.97298C24.2617 1.69231 25.6425 0.701317 27.0384 0L29.4509 2.74429C28.6923 3.04921 27.8274 3.62855 26.8563 4.48233C25.9156 5.30561 25.0811 6.26611 24.3528 7.36382C23.6548 8.43104 23.2755 9.51351 23.2148 10.6112C23.4879 10.2453 23.9583 9.9404 24.6259 9.69646C25.2935 9.45253 25.9915 9.33056 26.7198 9.33056C28.0853 9.33056 29.2992 9.83368 30.3613 10.8399C31.4538 11.8157 32 13.203 32 15.0021C32 17.1365 31.3324 18.8441 29.9972 20.1247C28.6923 21.3749 27.0536 22 25.0811 22ZM6.96444 22C4.96159 22 3.29256 21.3139 1.95733 19.9418C0.652442 18.5392 0 16.5419 0 13.9501C0 11.5717 0.455192 9.46777 1.36558 7.63826C2.27596 5.80873 3.41394 4.25364 4.77952 2.97298C6.14509 1.69231 7.52584 0.701317 8.92176 0L11.3343 2.74429C10.5756 3.04921 9.71076 3.62855 8.73969 4.48233C7.79896 5.30561 6.96444 6.26611 6.23613 7.36382C5.53817 8.43104 5.15884 9.51351 5.09815 10.6112C5.37127 10.2453 5.84163 9.9404 6.50925 9.69646C7.17686 9.45253 7.87482 9.33056 8.60313 9.33056C9.96871 9.33056 11.1826 9.83368 12.2447 10.8399C13.3371 11.8157 13.8834 13.203 13.8834 15.0021C13.8834 17.1365 13.2157 18.8441 11.8805 20.1247C10.5756 21.3749 8.93694 22 6.96444 22Z"
+                              fill="#2A2B6D" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="testimonial-author">
+                        <img src="./media/home/Avatar.jpg" alt="Ahmed Al-Maktoum" class="author-photo">
+                        <div class="author-info">
+                          <p class="author-name">Ahmed Al-Maktoum</p>
+                          <p class="author-position">CEO of Transportation Company</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonials__swiper-slide swiper-slide">
+                    <div class="testimonials__slide-inner">
+                      <div class="testimonial-text__wrapper">
+                        <div class="quote-start">
+                          <svg width="32" height="22" viewBox="0 0 32 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M25.0811 22C23.0782 22 21.4092 21.3139 20.074 19.9418C18.7691 18.5392 18.1166 16.5419 18.1166 13.9501C18.1166 11.5717 18.5718 9.46777 19.4822 7.63826C20.3926 5.80873 21.5306 4.25364 22.8962 2.97298C24.2617 1.69231 25.6425 0.701317 27.0384 0L29.4509 2.74429C28.6923 3.04921 27.8274 3.62855 26.8563 4.48233C25.9156 5.30561 25.0811 6.26611 24.3528 7.36382C23.6548 8.43104 23.2755 9.51351 23.2148 10.6112C23.4879 10.2453 23.9583 9.9404 24.6259 9.69646C25.2935 9.45253 25.9915 9.33056 26.7198 9.33056C28.0853 9.33056 29.2992 9.83368 30.3613 10.8399C31.4538 11.8157 32 13.203 32 15.0021C32 17.1365 31.3324 18.8441 29.9972 20.1247C28.6923 21.3749 27.0536 22 25.0811 22ZM6.96444 22C4.96159 22 3.29256 21.3139 1.95733 19.9418C0.652442 18.5392 0 16.5419 0 13.9501C0 11.5717 0.455192 9.46777 1.36558 7.63826C2.27596 5.80873 3.41394 4.25364 4.77952 2.97298C6.14509 1.69231 7.52584 0.701317 8.92176 0L11.3343 2.74429C10.5756 3.04921 9.71076 3.62855 8.73969 4.48233C7.79896 5.30561 6.96444 6.26611 6.23613 7.36382C5.53817 8.43104 5.15884 9.51351 5.09815 10.6112C5.37127 10.2453 5.84163 9.9404 6.50925 9.69646C7.17686 9.45253 7.87482 9.33056 8.60313 9.33056C9.96871 9.33056 11.1826 9.83368 12.2447 10.8399C13.3371 11.8157 13.8834 13.203 13.8834 15.0021C13.8834 17.1365 13.2157 18.8441 11.8805 20.1247C10.5756 21.3749 8.93694 22 6.96444 22Z"
+                              fill="#2A2B6D" />
+                          </svg>
+                        </div>
+                        <blockquote class="testimonial-text">
+                          KITAEV developed a logistics optimization system for us that reduced our costs by $200k in the
+                          first year. The results have exceeded expectations.
+                        </blockquote>
+                        <div class="quote-end">
+                          <svg width="32" height="22" viewBox="0 0 32 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M25.0811 22C23.0782 22 21.4092 21.3139 20.074 19.9418C18.7691 18.5392 18.1166 16.5419 18.1166 13.9501C18.1166 11.5717 18.5718 9.46777 19.4822 7.63826C20.3926 5.80873 21.5306 4.25364 22.8962 2.97298C24.2617 1.69231 25.6425 0.701317 27.0384 0L29.4509 2.74429C28.6923 3.04921 27.8274 3.62855 26.8563 4.48233C25.9156 5.30561 25.0811 6.26611 24.3528 7.36382C23.6548 8.43104 23.2755 9.51351 23.2148 10.6112C23.4879 10.2453 23.9583 9.9404 24.6259 9.69646C25.2935 9.45253 25.9915 9.33056 26.7198 9.33056C28.0853 9.33056 29.2992 9.83368 30.3613 10.8399C31.4538 11.8157 32 13.203 32 15.0021C32 17.1365 31.3324 18.8441 29.9972 20.1247C28.6923 21.3749 27.0536 22 25.0811 22ZM6.96444 22C4.96159 22 3.29256 21.3139 1.95733 19.9418C0.652442 18.5392 0 16.5419 0 13.9501C0 11.5717 0.455192 9.46777 1.36558 7.63826C2.27596 5.80873 3.41394 4.25364 4.77952 2.97298C6.14509 1.69231 7.52584 0.701317 8.92176 0L11.3343 2.74429C10.5756 3.04921 9.71076 3.62855 8.73969 4.48233C7.79896 5.30561 6.96444 6.26611 6.23613 7.36382C5.53817 8.43104 5.15884 9.51351 5.09815 10.6112C5.37127 10.2453 5.84163 9.9404 6.50925 9.69646C7.17686 9.45253 7.87482 9.33056 8.60313 9.33056C9.96871 9.33056 11.1826 9.83368 12.2447 10.8399C13.3371 11.8157 13.8834 13.203 13.8834 15.0021C13.8834 17.1365 13.2157 18.8441 11.8805 20.1247C10.5756 21.3749 8.93694 22 6.96444 22Z"
+                              fill="#2A2B6D" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="testimonial-author">
+                        <img src="./media/home/Avatar.jpg" alt="Ahmed Al-Maktoum" class="author-photo">
+                        <div class="author-info">
+                          <p class="author-name">Ahmed Al-Maktoum</p>
+                          <p class="author-position">CEO of Transportation Company</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonials__swiper-slide swiper-slide">
+                    <div class="testimonials__slide-inner">
+                      <div class="testimonial-text__wrapper">
+                        <div class="quote-start">
+                          <svg width="32" height="22" viewBox="0 0 32 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M25.0811 22C23.0782 22 21.4092 21.3139 20.074 19.9418C18.7691 18.5392 18.1166 16.5419 18.1166 13.9501C18.1166 11.5717 18.5718 9.46777 19.4822 7.63826C20.3926 5.80873 21.5306 4.25364 22.8962 2.97298C24.2617 1.69231 25.6425 0.701317 27.0384 0L29.4509 2.74429C28.6923 3.04921 27.8274 3.62855 26.8563 4.48233C25.9156 5.30561 25.0811 6.26611 24.3528 7.36382C23.6548 8.43104 23.2755 9.51351 23.2148 10.6112C23.4879 10.2453 23.9583 9.9404 24.6259 9.69646C25.2935 9.45253 25.9915 9.33056 26.7198 9.33056C28.0853 9.33056 29.2992 9.83368 30.3613 10.8399C31.4538 11.8157 32 13.203 32 15.0021C32 17.1365 31.3324 18.8441 29.9972 20.1247C28.6923 21.3749 27.0536 22 25.0811 22ZM6.96444 22C4.96159 22 3.29256 21.3139 1.95733 19.9418C0.652442 18.5392 0 16.5419 0 13.9501C0 11.5717 0.455192 9.46777 1.36558 7.63826C2.27596 5.80873 3.41394 4.25364 4.77952 2.97298C6.14509 1.69231 7.52584 0.701317 8.92176 0L11.3343 2.74429C10.5756 3.04921 9.71076 3.62855 8.73969 4.48233C7.79896 5.30561 6.96444 6.26611 6.23613 7.36382C5.53817 8.43104 5.15884 9.51351 5.09815 10.6112C5.37127 10.2453 5.84163 9.9404 6.50925 9.69646C7.17686 9.45253 7.87482 9.33056 8.60313 9.33056C9.96871 9.33056 11.1826 9.83368 12.2447 10.8399C13.3371 11.8157 13.8834 13.203 13.8834 15.0021C13.8834 17.1365 13.2157 18.8441 11.8805 20.1247C10.5756 21.3749 8.93694 22 6.96444 22Z"
+                              fill="#2A2B6D" />
+                          </svg>
+                        </div>
+                        <blockquote class="testimonial-text">
+                          KITAEV developed a logistics optimization system for us that reduced our costs by $200k in the
+                          first year. The results have exceeded expectations.
+                        </blockquote>
+                        <div class="quote-end">
+                          <svg width="32" height="22" viewBox="0 0 32 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M25.0811 22C23.0782 22 21.4092 21.3139 20.074 19.9418C18.7691 18.5392 18.1166 16.5419 18.1166 13.9501C18.1166 11.5717 18.5718 9.46777 19.4822 7.63826C20.3926 5.80873 21.5306 4.25364 22.8962 2.97298C24.2617 1.69231 25.6425 0.701317 27.0384 0L29.4509 2.74429C28.6923 3.04921 27.8274 3.62855 26.8563 4.48233C25.9156 5.30561 25.0811 6.26611 24.3528 7.36382C23.6548 8.43104 23.2755 9.51351 23.2148 10.6112C23.4879 10.2453 23.9583 9.9404 24.6259 9.69646C25.2935 9.45253 25.9915 9.33056 26.7198 9.33056C28.0853 9.33056 29.2992 9.83368 30.3613 10.8399C31.4538 11.8157 32 13.203 32 15.0021C32 17.1365 31.3324 18.8441 29.9972 20.1247C28.6923 21.3749 27.0536 22 25.0811 22ZM6.96444 22C4.96159 22 3.29256 21.3139 1.95733 19.9418C0.652442 18.5392 0 16.5419 0 13.9501C0 11.5717 0.455192 9.46777 1.36558 7.63826C2.27596 5.80873 3.41394 4.25364 4.77952 2.97298C6.14509 1.69231 7.52584 0.701317 8.92176 0L11.3343 2.74429C10.5756 3.04921 9.71076 3.62855 8.73969 4.48233C7.79896 5.30561 6.96444 6.26611 6.23613 7.36382C5.53817 8.43104 5.15884 9.51351 5.09815 10.6112C5.37127 10.2453 5.84163 9.9404 6.50925 9.69646C7.17686 9.45253 7.87482 9.33056 8.60313 9.33056C9.96871 9.33056 11.1826 9.83368 12.2447 10.8399C13.3371 11.8157 13.8834 13.203 13.8834 15.0021C13.8834 17.1365 13.2157 18.8441 11.8805 20.1247C10.5756 21.3749 8.93694 22 6.96444 22Z"
+                              fill="#2A2B6D" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="testimonial-author">
+                        <img src="./media/home/Avatar.jpg" alt="Ahmed Al-Maktoum" class="author-photo">
+                        <div class="author-info">
+                          <p class="author-name">Ahmed Al-Maktoum</p>
+                          <p class="author-position">CEO of Transportation Company</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonials__pagination-wrapper">
+              <div class="testimonials__swiper-pagination swiper-pagination"></div>
+            </div>
+          </div>
+      </section>
+      <section class="audit-cta">
+        <div class="container">
+          <div class="audit-cta__content">
+            <div class="audit-cta__text text">
+              <h2 class="audit-cta__title title">
+                Order an audit of
+                your processes free of charge
+              </h2>
+              <p class="audit-cta__description">
+                Our experts will analyze 3 key business processes
+                and propose solutions for their automation
+              </p>
+            </div>
+            <div class="audit-cta__button">
+              <a href="#audit-form" class="btn btn--white">Get Audit</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__contact-form">
+        <div class="container">
+          <div class="contact-form_inner">
+            <div class="contact-form__content">
+              <div class="contact-form__text text">
+                <h3 class="contact-form__title title">
+                  Get notified when we launch
+                </h3>
+                <p class="contact-form__description">
+                  Stay up to date with the latest news, announcements, and articles.
+                </p>
+              </div>
+              <form class="newsletter__form">
+                <input type="email" class="contact-form__input" placeholder="Enter your email" required>
+                <button type="submit" class="contact-form__button button">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__inner">
+        <div class="footer__container container">
+          <div class="footer__logo-wrapper">
+            <div class="footer__logo">
+              <img src="media/footer/FooterLogo.svg" alt="logo">
+            </div>
+            <p class="footer__description-text text">
+              AI-powered solutions for enterprise optimization and competitive advantage.
+            </p>
+          </div>
+          <div class="footer__nav-wrapper">
+            <nav class="footer__nav">
+              <div class="footer__nav-col">
+                <h4>Product</h4>
+                <ul>
+                  <li><a href="#">Overview</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Solutions <span class="tag-new">New</span></a></li>
+                  <li><a href="#">Tutorials</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Releases</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-col">
+                <h4>Company</h4>
+                <ul>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Media kit</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-col">
+                <h4>Resources</h4>
+                <ul>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Newsletter</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Help centre</a></li>
+                  <li><a href="#">Tutorials</a></li>
+                  <li><a href="#">Support</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-col">
+                <h4>Social</h4>
+                <ul>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">LinkedIn</a></li>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">GitHub</a></li>
+                  <li><a href="#">AngelList</a></li>
+                  <li><a href="#">Dribbble</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-col">
+                <h4>Legal</h4>
+                <ul>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Cookies</a></li>
+                  <li><a href="#">Licenses</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner">
+            <p>© 2023 KITAEV Technologies. All rights reserved.</p>
+            <div class="footer__icons">
+              <!-- сюда можно вставить SVG или иконки из Font Awesome -->
+              <a href="#"><img src="media/socials/x-icon.svg" alt="X"></a>
+              <a href="#"><img src="media/socials/li-icon.svg" alt="LinkedIn"></a>
+              <a href="#"><img src="media/socials/fb-icon.svg" alt="Facebook"></a>
+              <a href="#"><img src="media/socials/gh-icon.svg" alt="GitHub"></a>
+              <a href="#"><img src="media/socials/peace-icon.svg" alt="AngelList"></a>
+              <a href="#"><img src="media/socials/dribbbleicon.svg" alt="Dribbble"></a>
+              <a href="#"><img src="media/socials/cube-icon.svg" alt="Cube"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+<!-- <script type="module" src="./js/swiper-bundle.min.js"></script> -->
+
+</html>

@@ -1,0 +1,229 @@
+.contact {}
+
+.contact__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact__content-col {
+  border-radius: var(--fourth-border-radius);
+}
+
+.contact__container {}
+
+.contact__header {}
+
+.contact__title {}
+
+.contact__subtitle {}
+
+.contact__content {
+
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+}
+
+.contact__info {
+  background: var(--accent-bg);
+  /* background-image: url("./../../media/contact/ContactFrame.svg"); */
+  padding: 40px;
+  max-width: 428px;
+  width: 100%;
+  height: 715px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.contact__info svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.contact__info h3,
+.contact__info p,
+.contact__info a,
+.contact__info span {
+  color: #fff;
+}
+
+.contact__info h3 {
+  font-weight: 500;
+  font-size: var(--secondary-element-title);
+}
+
+.contact__info p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 80px;
+}
+
+
+.contact__info-inner {}
+
+.contact__info-title {
+  margin-bottom: 7px;
+}
+
+.contact__info-text {}
+
+.contact__info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact__info-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+}
+
+.contact__info-item img {
+  width: 24px;
+  height: 24px;
+}
+
+.info-item__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact__info-item span {
+  color: #BDBDD2;
+}
+
+
+.contact__info-label {
+  font-weight: 400;
+  font-size: 0.875rem;
+  font-family: 'League Spartan';
+}
+
+.contact__info-value {}
+
+.contact__socials {
+  display: flex;
+  gap: 24px;
+}
+
+.contact__social {}
+
+.contact__social--x {}
+
+.contact__social--linkedin {}
+
+.contact__social--facebook {}
+
+.contact__social--custom {}
+
+.contact__form-block {
+  background: #f3f4f6;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contact__form-title {
+  font-weight: 400;
+  font-size: 24px;
+  color: #111928;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.contact__form-row {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.contact__input {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px 16px;
+  width: 100%;
+  height: 37px;
+}
+
+.contact__textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 100%;
+  height: 112px;
+}
+
+.contact__submit {
+  border-radius: 6px;
+  padding: 10px 20px;
+  width: 100%;
+  height: 48px;
+  background: var(--secondary-btn-color);
+  color: var(--btn-text-color);
+  font-weight: 500;
+  font-size: 24px;
+  font-family: 'League Spartan';
+}
+
+.contact__form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+@media (max-width: 920px) {
+  .contact__content {
+    flex-direction: column;
+    padding: 32px 0 0 0;
+    gap: 24px;
+  }
+
+  .contact__info {
+    max-width: 100%;
+    height: auto;
+    gap: 40px;
+  }
+
+  .contact__info>div,
+  .contact__info-item {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .contact__info-item {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .contact__info p {
+    margin-bottom: 40px;
+  }
+
+  .contact__form-row {
+    flex-direction: column;
+  }
+  .contact__inner {
+    gap: 32px;
+  }
+  .contact__form-block {
+    padding: 24px;
+  }
+}
